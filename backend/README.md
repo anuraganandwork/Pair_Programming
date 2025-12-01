@@ -100,8 +100,8 @@ pip install -r requirements.txt
 
 # Configure environment
 cp .env.example .env
-# Edit .env with your settings:
-# DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/pairprogramming
+# Edit .env with your database credentials:
+# DATABASE_URL=postgresql+asyncpg://YOUR_DB_USER:YOUR_DB_PASSWORD@localhost:5432/pairprogramming
 # ENVIRONMENT=development
 # CORS_ORIGINS=http://localhost:3000,http://localhost:5173
 
@@ -201,7 +201,7 @@ Create a `.env` file in the backend directory:
 
 ```bash
 # Database
-DATABASE_URL=postgresql+asyncpg://postgres:postgres@localhost:5432/pairprogramming
+DATABASE_URL=postgresql+asyncpg://YOUR_DB_USER:YOUR_DB_PASSWORD@localhost:5432/pairprogramming
 
 # Environment
 ENVIRONMENT=development  # or production, staging, test
